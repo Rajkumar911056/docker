@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Website</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body{
+            background:#f4f4f4;
+        }
+
+        header{
+            background:#111;
+            color:white;
+            padding:20px;
+            text-align:center;
+        }
+
+        nav{
+            background:#222;
+            padding:15px;
+            text-align:center;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin:15px;
+            font-size:18px;
+        }
+
+        .hero{
+            height:450px;
+            background:url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?q=80&w=1200') no-repeat center center/cover;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            color:white;
+            font-size:45px;
+            font-weight:bold;
+        }
+
+        .cars{
+            display:flex;
+            justify-content:center;
+            gap:20px;
+            padding:40px;
+            flex-wrap:wrap;
+        }
+
+        .card{
+            background:white;
+            width:280px;
+            border-radius:10px;
+            overflow:hidden;
+            box-shadow:0 0 10px rgba(0,0,0,0.2);
+            text-align:center;
+        }
+
+        .card img{
+            width:100%;
+            height:200px;
+            object-fit:cover;
+        }
+
+        .card h3{
+            padding:15px;
+        }
+
+        .card p{
+            padding:0 15px 15px;
+        }
+
+        .btn{
+            display:inline-block;
+            margin-bottom:20px;
+            padding:10px 20px;
+            background:red;
+            color:white;
+            text-decoration:none;
+            border-radius:5px;
+        }
+
+        footer{
+            background:#111;
+            color:white;
+            text-align:center;
+            padding:20px;
+            margin-top:20px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Luxury Cars</h1>
+        <p>Drive Your Dream Car</p>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Cars</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <div class="hero">
+        Welcome To Car World
+    </div>
+
+    <section class="cars">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=800" alt="BMW">
+            <h3>BMW</h3>
+            <p>Luxury and performance combined together.</p>
+            <a href="#" class="btn">Book Now</a>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?q=80&w=800" alt="Audi">
+            <h3>Audi</h3>
+            <p>Elegant design with premium comfort.</p>
+            <a href="#" class="btn">Book Now</a>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?q=80&w=800" alt="Sports Car">
+            <h3>Sports Car</h3>
+            <p>Experience speed and powerful driving.</p>
+            <a href="#" class="btn">Book Now</a>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>© 2026 Luxury Cars | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>

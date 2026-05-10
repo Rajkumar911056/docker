@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Website</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body{
+            background:#f4f4f4;
+        }
+
+        header{
+            background:orange;
+            color:white;
+            padding:20px;
+            text-align:center;
+        }
+
+        nav{
+            background:#333;
+            padding:15px;
+            text-align:center;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin:15px;
+            font-size:18px;
+        }
+
+        .hero{
+            height:400px;
+            background:url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1200') no-repeat center center/cover;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            color:white;
+            font-size:40px;
+            font-weight:bold;
+        }
+
+        .foods{
+            display:flex;
+            justify-content:center;
+            gap:20px;
+            padding:40px;
+            flex-wrap:wrap;
+        }
+
+        .card{
+            background:white;
+            width:250px;
+            border-radius:10px;
+            overflow:hidden;
+            box-shadow:0 0 10px rgba(0,0,0,0.2);
+            text-align:center;
+        }
+
+        .card img{
+            width:100%;
+            height:200px;
+            object-fit:cover;
+        }
+
+        .card h3{
+            padding:15px;
+        }
+
+        .card p{
+            padding:0 15px 15px;
+        }
+
+        .btn{
+            display:inline-block;
+            margin-bottom:20px;
+            padding:10px 20px;
+            background:orange;
+            color:white;
+            text-decoration:none;
+            border-radius:5px;
+        }
+
+        footer{
+            background:#222;
+            color:white;
+            text-align:center;
+            padding:20px;
+            margin-top:20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Food Paradise</h1>
+        <p>Delicious Food Delivered Fresh</p>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Menu</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <div class="hero">
+        Welcome to Food Paradise
+    </div>
+
+    <section class="foods">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=800" alt="Burger">
+            <h3>Burger</h3>
+            <p>Tasty and crispy burger with cheese.</p>
+            <a href="#" class="btn">Order Now</a>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=800" alt="Pizza">
+            <h3>Pizza</h3>
+            <p>Hot and cheesy pizza with toppings.</p>
+            <a href="#" class="btn">Order Now</a>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1604908176997-4318f4b4f4c3?q=80&w=800" alt="Pasta">
+            <h3>Pasta</h3>
+            <p>Italian pasta with rich creamy sauce.</p>
+            <a href="#" class="btn">Order Now</a>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>© 2026 Food Paradise | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>

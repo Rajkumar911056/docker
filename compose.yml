@@ -1,0 +1,67 @@
+services:
+  food:
+    container_name: cont1
+    build: ./food
+    ports:
+      - "1232:80"
+    environment:
+      name: food_name
+      password: food@123
+    networks:
+      - food_network
+    deploy:
+      resources:
+        limits:
+          cpus: "0.4"
+          memory: 233M
+        reservations:
+          cpus: "0.1"
+          memory: 54M
+  car:
+    container_name: cont2
+    build: ./bike
+    ports:
+      - "12323:80"
+    environment:
+      app: bike_name
+      password: bike@123
+    networks:
+      - bike_network
+    deploy:
+      resources:
+        limits:
+          cpus: "0.4"
+          memory: 250M
+        reservations:
+          cpus: "0.1"
+          memory: 17M
+  bike:
+    container_name: cont3
+    build: ./bike
+    ports:
+      - "2222:80"
+    environment:
+      name: bike_name
+      password: bike@123
+    networks:
+      - bike_network
+    deploy:
+      resources:
+        limits:
+          cpus: "0.5"
+          memory: 230M
+        reservations:
+          cpu: "0.1"
+          memory: 60M
+
+
+    
+
+networks:
+  food_network:
+    driver: bridge
+  car__network:
+    driver: bridge
+  bike_network:
+    driver: bridge
+
